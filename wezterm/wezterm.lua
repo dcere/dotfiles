@@ -21,21 +21,9 @@ config.audible_bell = 'Disabled'
 -- Enable scrollbar
 config.enable_scroll_bar = true
 
--- Keybindings
-config.keys = {
-    -- Ctrl + Shift + e -> Split vertically (left and right)
-    {
-        key = 'e',
-        mods = 'CTRL|SHIFT',
-        action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
-    },
-    -- Ctrl + Shift + o -> Split horizontally (top and bottom)
-    {
-        key = 'o',
-        mods = 'CTRL|SHIFT',
-        action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
-    },
-}
+-- Terminator: Splits and Keybindings
+local terminator = require 'terminator'
+terminator.apply_to_config(config)
 
 -- and finally, return the configuration to wezterm
 return config
