@@ -1,4 +1,6 @@
 {
     "chat.commandCenter.enabled": false,
+    "files.trimTrailingWhitespace": true,
+    "editor.lightbulb.enabled": "off",
     "editor.minimap.showSlider": "always"
 }
