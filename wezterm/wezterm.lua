@@ -9,6 +9,9 @@ local config = wezterm.config_builder()
 -- Bash as interactive shell. Ubuntu 22 fix.
 config.default_prog = { 'bash', '-i' }
 
+-- Disable Wayland. Ubuntu 22 fix.
+-- config.enable_wayland = false
+
 -- For example, changing the color scheme:
 config.color_scheme = 'Tango (base16)'
 
